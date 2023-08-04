@@ -1,0 +1,18 @@
+.navbar-form {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 100px;
+}
+
+.form-group {
+    margin-bottom: 0;
+}
+
+.form-control {
+    height: 40px; /* 设置搜索框高度 */
+}
+.navbar-nav li {
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <title>UstbTube</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <link rel="stylesheet" href="rsc/css/log/dmaku.css">
+
+    <script src="rsc/js/jquery-2.1.1.js"></script>
+
+    <script src="rsc/js/log.js"></script>
+</head>
+<!--/************************************************************
+ *																*
+ * 						      							*
+ *                        							*
+ *       		  努力创建完善、持续更新插件以及模板			*
+ * 																*
+**************************************************************-->
+<body>
+    <div class="dowebok" id="dowebok">
+        <div class="form-container sign-up-container">
+            <form onsubmit="return false">
+                <h1>注册</h1>
+
+                <span>或使用邮箱注册</span>
+                <input id="nickName" type="text" placeholder="用户名称" required="required">
+                <span id="nameResult" style="color: red;"></span>
+                <input id="phone" placeholder="手机号" required="required">
+                <button id="sendCode">获取验证码</button>
+                <span id="send" style="color: red;"></span>
+                <input id="code" placeholder="输入验证码">
+                <input id="passWord" type="password" placeholder="密码">
+                <button id="register">注册</button>
+                <span id="registerResult" style="color: red;"></span>
+
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="log?state=login" method="post">
+                <h1>登录</h1>
+
+                <span>或使用您的帐号</span>
+                <input placeholder="账号/手机号" name="account">
+                <input type="password" placeholder="密码" name="passWord">
+                <a href="#">忘记密码？</a>
+                <button>登录</button>
+
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>已有帐号？</h1>
+                    <p>请使用您的帐号进行登录</p>
+                    <button class="ghost" id="signIn">登录</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>没有帐号？</h1>
+                    <p>立即注册加入我们，和我们一起开始旅程吧</p>
+                    <button class="ghost" id="signUp">注册</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="rsc/js/log/dmaku.js"></script>
+<style>
+.copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+</style>
+<div class="copyrights" id="links20210126">
+	Collect from <a href="http://www.cssmoban.com/"  title="网站模板">模板之家</a>
+	<a href="http://cooco.net.cn/" title="组卷网">组卷网</a>
+</div>
+</body>
+
+</html>

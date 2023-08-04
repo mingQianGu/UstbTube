@@ -1,0 +1,786 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+	
+    <title>UstbTube</title>
+	
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="rsc/css/bootstrap.min.css"  type="text/css">
+	
+	<!-- Custom CSS -->
+    <link rel="stylesheet" href="rsc/css/style.css">
+	
+	<!-- Owl Carousel Assets -->
+    <link href="rsc/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="rsc/owl-carousel/owl.theme.css" rel="stylesheet">
+	
+	<!-- Custom Fonts -->
+    <link rel="stylesheet" href="rsc/font-awesome-4.4.0/css/font-awesome.min.css"  type="text/css">
+	
+	<!-- jQuery -->
+	<script src="rsc/js/jquery-2.1.1.js"></script>
+	
+	<!-- Core JavaScript Files -->  	 
+    <script src="rsc/js/bootstrap.min.js"></script>
+	
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="rsc/js/html5shiv.js"></script>
+        <script src="rsc/js/respond.min.js"></script>
+    <![endif]-->
+
+	<script src="rsc/js/index.js"></script>
+	<script src="rsc/js/user.js"></script>
+	<link rel="rsc/css/index.css" type="text/css">
+
+</head>
+
+<body>
+<header>
+	<!--Top-->
+	<nav id="top">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-sm-6">
+					<strong id="welcome">Welcome to USTBTUBE!</strong>
+				</div>
+				<div class="col-md-6 col-sm-6">
+					<ul class="list-inline top-link link">
+						<li><a href="index"><i class="fa fa-home"></i> 主页</a></li>
+						<li><a href="contact.html"><i class="fa fa-comments"></i> Contact</a></li>
+						<li><a href="#"><i class="fa fa-question-circle"></i> FAQ</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	
+	<!--Navigation-->
+    <nav id="menu" class="navbar">
+		<div class="container">
+			<div class="navbar-header"><span id="heading" class="visible-xs">Categories</span>
+			  <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>
+			</div>
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="index"><i class="fa fa-home"></i> 主页</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> 账号</a>
+						<div class="dropdown-menu">
+							<div class="dropdown-inner">
+								<ul class="list-unstyled">
+									<li id="log"><a href="log">登录/注册</a></li>
+									<li id="mine"><a href="info">个人中心</a></li>
+									<li id="favorites"><a href="favorites">收藏</a></li>
+									<li id="history"><a href="log">历史</a></li>
+									<li id="exit"><a href="log?state=exit">退出登录</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-play-circle-o"></i> 收藏</a>
+						<div class="dropdown-menu">
+							<div class="dropdown-inner">
+								<ul class="list-unstyled">
+									<li><a href="archive.html">Text 201</a></li>
+									<li><a href="archive.html">Text 202</a></li>
+									<li><a href="archive.html">Text 203</a></li>
+									<li><a href="archive.html">Text 204</a></li>
+									<li><a href="archive.html">Text 205</a></li>
+								</ul>
+							</div> 
+						</div>
+					</li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-list"></i> 分区</a>
+						<div class="dropdown-menu" style="margin-left: -203.625px;">
+							<div class="dropdown-inner">
+								<ul class="list-unstyled">
+									<li><a href="archive.html">自然</a></li>
+									<li><a href="archive.html">生活</a></li>
+									<li><a href="archive.html">科技</a></li>
+								</ul>
+								<ul class="list-unstyled">
+									<li><a href="archive.html">游戏</a></li>
+									<li><a href="archive.html">美食</a></li>
+									<li><a href="archive.html">动画</a></li>
+								</ul>
+								<ul class="list-unstyled">
+									<li><a href="archive.html">影视</a></li>
+									<li><a href="archive.html">音乐</a></li>
+									<li><a href="archive.html#">资讯</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li id="submit"><a href="contact.html"><i class="fa fa-envelope"></i> 投稿</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div>
+		<form class="navbar-form" role="search" action="search" method="post">
+			<div class="form-group">
+				<input type="text" class="form-control" name="searchQuery" placeholder="Search">
+			</div>
+			<button type="submit" class="btn btn-default"><i class="fas fa-search"></i></button>
+		</form>
+	</div>
+
+</header>
+<!-- Header -->
+	
+	<!-- /////////////////////////////////////////Content -->
+	<div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >网页模板</a></div>
+    <div id="page-content" class="index-page">
+	
+		<div class="container">
+			<div class="row">
+				<div class="featured">
+
+					<!--最火视频-->
+					<div class="main-vid">
+						<div class="col-md-6">
+							<div class="zoom-container">
+								<div class="zoom-caption">
+									<span id="hottestTag"></span>
+									<a id="hottestPath">
+										<i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+									</a>
+									<p id="hottestName"></p>
+								</div>
+								<img id="hottestImg" src="" alt=""/>
+							</div>
+						</div>
+					</div>
+
+					<!--		推荐四个视频		-->
+					<div class="sub-vid">
+						<div class="col-md-3">
+							<div class="zoom-container">
+								<div class="zoom-caption">
+									<span id="guessOneTag"></span>
+									<a id="guessOne">
+										<i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+									</a>
+									<p id="guessOneName"></p>
+								</div>
+								<img id="guessOneImg" src="" alt=""/>
+							</div>
+							<div class="zoom-container">
+								<div class="zoom-caption">
+									<span id="guessTwoTag"></span>
+									<a id="guessTwo">
+										<i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+									</a>
+									<p id="guessTwoName"></p>
+								</div>
+								<img id="guessTwoImg" src="" alt=""/>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="zoom-container">
+								<div class="zoom-caption">
+									<span id="guessThreeTag"></span>
+									<a id="guessThree">
+										<i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+									</a>
+									<p id="guessThreeName"></p>
+								</div>
+								<img id="guessThreeImg" src="" alt=""/>
+							</div>
+							<div class="zoom-container">
+								<div class="zoom-caption">
+									<span id="guessFourTag"></span>
+									<a id="guessFour">
+										<i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+									</a>
+									<p id="guessFourName"></p>
+								</div>
+								<img id="guessFourImg" src="" alt=""/>
+							</div>
+						</div>
+					</div>
+					<div class="clear"></div>
+
+
+				</div>
+			</div>
+			<div class="row">
+
+
+
+				<div id="main-content" class="col-md-8">
+
+					<!--	精选视频	  -->
+
+					<div class="box">
+						<div class="box-header">
+							<h2><i class="fa fa-globe"></i> 精选视频</h2>
+						</div>
+						<div class="box-content">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="wrap-vid">
+										<div class="zoom-container">
+											<div class="zoom-caption">
+												<span>Video's Tag</span>
+												<a href="detail.html">
+													<i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+												</a>
+												<p>Video's Name</p>
+											</div>
+											<img src="rsc/images/7.jpg" />
+										</div>
+										<h3 class="vid-name"><a href="#">Video's Name</a></h3>
+										<div class="info">
+											<h5>By <a href="#">Kelvin</a></h5>
+											<span><i class="fa fa-calendar"></i>25/3/2015</span>
+											<span><i class="fa fa-heart"></i>1,200</span>
+										</div>
+									</div>
+									<p class="more">Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non. Pellentesque rutrum fringilla elementum. Curabitur tincidunt porta lorem vitae accumsan.</p>
+									<a href="detail.html" class="btn btn-1">Read More</a>
+									<div class="line"></div>
+									<div class="post wrap-vid">
+										<div class="zoom-container">
+											<div class="zoom-caption">
+												<span>Video's Tag</span>
+												<a href="detail.html">
+													<i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+												</a>
+												<p>Video's Name</p>
+											</div>
+											<img src="rsc/images/8.jpg" />
+										</div>
+										<div class="wrapper">
+											<h5 class="vid-name"><a href="#">Video's Name</a></h5>
+											<div class="info">
+												<h6>By <a href="#">Kelvin</a></h6>
+												<span><i class="fa fa-calendar"></i>25/3/2015</span>
+												<span><i class="fa fa-heart"></i>1,200</span>
+											</div>
+										</div>
+									</div>
+									<div class="post wrap-vid">
+										<div class="zoom-container">
+											<div class="zoom-caption">
+												<span>Video's Tag</span>
+												<a href="detail.html">
+													<i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+												</a>
+												<p>Video's Name</p>
+											</div>
+											<img src="rsc/images/9.jpg" />
+										</div>
+										<div class="wrapper">
+											<h5 class="vid-name"><a href="#">Video's Name</a></h5>
+											<div class="info">
+												<h6>By <a href="#">Kelvin</a></h6>
+												<span><i class="fa fa-calendar"></i>25/3/2015</span>
+												<span><i class="fa fa-heart"></i>1,200</span>
+											</div>
+										</div>
+									</div>
+									<div class="post wrap-vid">
+										<div class="zoom-container">
+											<div class="zoom-caption">
+												<span>Video's Tag</span>
+												<a href="detail.html">
+													<i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+												</a>
+												<p>Video's Name</p>
+											</div>
+											<img src="rsc/images/6.jpg" />
+										</div>
+										<div class="wrapper">
+											<h5 class="vid-name"><a href="#">Video's Name</a></h5>
+											<div class="info">
+												<h6>By <a href="#">Kelvin</a></h6>
+												<span><i class="fa fa-calendar"></i>25/3/2015</span>
+												<span><i class="fa fa-heart"></i>1,200</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="wrap-vid">
+										<div class="zoom-container">
+											<div class="zoom-caption">
+												<span>Video's Tag</span>
+												<a href="detail.html">
+													<i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+												</a>
+												<p>Video's Name</p>
+											</div>
+											<img src="rsc/images/9.jpg" />
+										</div>
+										<h3 class="vid-name"><a href="#">Video's Name</a></h3>
+										<div class="info">
+											<h5>By <a href="#">Kelvin</a></h5>
+											<span><i class="fa fa-calendar"></i>25/3/2015</span>
+											<span><i class="fa fa-heart"></i>1,200</span>
+										</div>
+									</div>
+									<p class="more">Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non. Pellentesque rutrum fringilla elementum. Curabitur tincidunt porta lorem vitae accumsan.</p>
+									<a href="detail.html" class="btn btn-1">Read More</a>
+									<div class="line"></div>
+									<div class="post wrap-vid">
+										<div class="zoom-container">
+											<div class="zoom-caption">
+												<span>Video's Tag</span>
+												<a href="detail.html">
+													<i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+												</a>
+												<p>Video's Name</p>
+											</div>
+											<img src="rsc/images/4.jpg" />
+										</div>
+										<div class="wrapper">
+											<h5 class="vid-name"><a href="#">Video's Name</a></h5>
+											<div class="info">
+												<h6>By <a href="#">Kelvin</a></h6>
+												<span><i class="fa fa-calendar"></i>25/3/2015</span>
+												<span><i class="fa fa-heart"></i>1,200</span>
+											</div>
+										</div>
+									</div>
+									<div class="post wrap-vid">
+										<div class="zoom-container">
+											<div class="zoom-caption">
+												<span>Video's Tag</span>
+												<a href="detail.html">
+													<i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+												</a>
+												<p>Video's Name</p>
+											</div>
+											<img src="rsc/images/5.jpg" />
+										</div>
+										<div class="wrapper">
+											<h5 class="vid-name"><a href="#">Video's Name</a></h5>
+											<div class="info">
+												<h6>By <a href="#">Kelvin</a></h6>
+												<span><i class="fa fa-calendar"></i>25/3/2015</span>
+												<span><i class="fa fa-heart"></i>1,200</span>
+											</div>
+										</div>
+									</div>
+									<div class="post wrap-vid">
+										<div class="zoom-container">
+											<div class="zoom-caption">
+												<span>Video's Tag</span>
+												<a href="detail.html">
+													<i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+												</a>
+												<p>Video's Name</p>
+											</div>
+											<img src="rsc/images/2.jpg" />
+										</div>
+										<div class="wrapper">
+											<h5 class="vid-name"><a href="#">Video's Name</a></h5>
+											<div class="info">
+												<h6>By <a href="#">Kelvin</a></h6>
+												<span><i class="fa fa-calendar"></i>25/3/2015</span>
+												<span><i class="fa fa-heart"></i>1,200</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="line"></div>
+					</div>
+
+
+
+					<div class="box">
+						<div class="box-header">
+							<h2><i class="fa fa-play-circle-o"></i> 随机视频</h2>
+						</div>
+						<div class="box-content">
+							<div class="row">
+								<div class="col-md-4">
+									<div class="wrap-vid">
+										<div class="zoom-container">
+											<div class="zoom-caption">
+												<span>Video's Tag</span>
+												<a href="detail.html">
+													<i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+												</a>
+												<p>Video's Name</p>
+											</div>
+											<img src="rsc/images/3.jpg" />
+										</div>
+										<h3 class="vid-name"><a href="#">Video's Name</a></h3>
+										<div class="info">
+											<h5>By <a href="#">Kelvin</a></h5>
+											<span><i class="fa fa-calendar"></i>25/3/2015</span> 
+											<span><i class="fa fa-heart"></i>1,200</span>
+										</div>
+									</div>
+									<div class="wrap-vid">
+										<div class="zoom-container">
+											<div class="zoom-caption">
+												<span>Video's Tag</span>
+												<a href="detail.html">
+													<i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+												</a>
+												<p>Video's Name</p>
+											</div>
+											<img src="rsc/images/4.jpg" />
+										</div>
+										<h3 class="vid-name"><a href="#">Video's Name</a></h3>
+										<div class="info">
+											<h5>By <a href="#">Kelvin</a></h5>
+											<span><i class="fa fa-calendar"></i>25/3/2015</span> 
+											<span><i class="fa fa-heart"></i>1,200</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="wrap-vid">
+										<div class="zoom-container">
+											<div class="zoom-caption">
+												<span>Video's Tag</span>
+												<a href="detail.html">
+													<i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+												</a>
+												<p>Video's Name</p>
+											</div>
+											<img src="rsc/images/5.jpg" />
+										</div>
+										<h3 class="vid-name"><a href="#">Video's Name</a></h3>
+										<div class="info">
+											<h5>By <a href="#">Kelvin</a></h5>
+											<span><i class="fa fa-calendar"></i>25/3/2015</span> 
+											<span><i class="fa fa-heart"></i>1,200</span>
+										</div>
+									</div>
+									<div class="wrap-vid">
+										<div class="zoom-container">
+											<div class="zoom-caption">
+												<span>Video's Tag</span>
+												<a href="detail.html">
+													<i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+												</a>
+												<p>Video's Name</p>
+											</div>
+											<img src="rsc/images/6.jpg" />
+										</div>
+										<h3 class="vid-name"><a href="#">Video's Name</a></h3>
+										<div class="info">
+											<h5>By <a href="#">Kelvin</a></h5>
+											<span><i class="fa fa-calendar"></i>25/3/2015</span> 
+											<span><i class="fa fa-heart"></i>1,200</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="wrap-vid">
+										<div class="zoom-container">
+											<div class="zoom-caption">
+												<span>Video's Tag</span>
+												<a href="detail.html">
+													<i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+												</a>
+												<p>Video's Name</p>
+											</div>
+											<img src="rsc/images/7.jpg" />
+										</div>
+										<h3 class="vid-name"><a href="#">Video's Name</a></h3>
+										<div class="info">
+											<h5>By <a href="#">Kelvin</a></h5>
+											<span><i class="fa fa-calendar"></i>25/3/2015</span> 
+											<span><i class="fa fa-heart"></i>1,200</span>
+										</div>
+									</div>
+									<div class="wrap-vid">
+										<div class="zoom-container">
+											<div class="zoom-caption">
+												<span>Video's Tag</span>
+												<a href="detail.html">
+													<i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+												</a>
+												<p>Video's Name</p>
+											</div>
+											<img src="rsc/images/8.jpg" />
+										</div>
+										<h3 class="vid-name"><a href="#">Video's Name</a></h3>
+										<div class="info">
+											<h5>By <a href="#">Kelvin</a></h5>
+											<span><i class="fa fa-calendar"></i>25/3/2015</span> 
+											<span><i class="fa fa-heart"></i>1,200</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="line"></div>
+					</div>
+
+					<!--	最新视频		-->
+
+					<div class="box">
+						<div class="box-header">
+							<h2><i class="fa fa-vimeo-square"></i> 最新视频</h2>
+						</div>
+						<div class="box-content">
+							<div class="row">
+
+								<div class="col-md-4">
+									<div class="wrap-vid">
+										<div class="zoom-container">
+											<div class="zoom-caption">
+												<span id="newOneTag"></span>
+												<a id="newOnePath">
+													<i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+												</a>
+												<p id="newOneName"></p>
+											</div>
+											<img id="newOneImg" src="" alt=""/>
+										</div>
+										<h3 class="vid-name" id="newOnePathName"></h3>
+										<div class="info">
+											<h5 id="newOneUserName"></h5>
+											<span id="newOneCreateTime"><i class="fa fa-calendar"></i></span>
+											<span id="newOneStar"><i class="fa fa-heart"></i></span>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-4">
+									<div class="wrap-vid">
+										<div class="zoom-container">
+											<div class="zoom-caption">
+												<span id="newTwoTag"></span>
+												<a id="newTwoPath">
+													<i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+												</a>
+												<p id="newTwoName"></p>
+											</div>
+											<img id="newTwoImg" src="" alt=""/>
+										</div>
+										<h3 class="vid-name" id="newTwoPathName"></h3>
+										<div class="info">
+											<h5 id="newTwoUserName"></h5>
+											<span id="newTwoCreateTime"><i class="fa fa-calendar"></i></span>
+											<span id="newTwoStar"><i class="fa fa-heart"></i></span>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-4">
+									<div class="wrap-vid">
+										<div class="zoom-container">
+											<div class="zoom-caption">
+												<span id="newThreeTag"></span>
+												<a id="newThreePath">
+													<i class="fa fa-play-circle-o fa-5x" style="color: #fff"></i>
+												</a>
+												<p id="newThreeName"></p>
+											</div>
+											<img id="newThreeImg" src="" alt=""/>
+										</div>
+										<h3 class="vid-name" id="newThreePathName"></h3>
+										<div class="info">
+											<h5 id="newThreeUserName"></h5>
+											<span id="newThreeCreateTime"><i class="fa fa-calendar"></i></span>
+											<span id="newThreeStar"><i class="fa fa-heart"></i></span>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="sidebar" class="col-md-4">
+
+
+					<!---- 开发者邀请 ---->
+					<div class="widget wid-follow">
+						<div class="heading"><h4><i class="fa fa-users"></i> 成为我们的一员</h4></div>
+						<div class="content">
+							<img src="rsc/images/banner.jpg" />
+						</div>
+						<div class="line"></div>
+					</div>
+
+
+					<!---- 最新资讯 ---->
+					<div class="widget wid-news">
+						<div class="heading"><h4><i class="fa fa-clock-o"></i> 最新资讯</h4></div>
+						<div class="content" id="topNews">
+
+						</div>
+						<div class="line"></div>
+					</div>
+					<!---- Start Widget ---->
+					<div class="widget wid-post">
+						<div class="heading"><h4><i class="fa fa-comments"></i> Comment</h4></div>
+						<div class="content">
+							<div class="post">
+								<a href="detail.html">
+									<img src="rsc/images/head/user.png" />
+								</a>
+								<div class="wrapper">
+									<a href="#"><h5>Curabitur tincidunt porta lorem.</h5></a>
+									<ul class="list-inline">
+										<li><i class="fa fa-calendar"></i>25/3/2015</li> 
+										<li><i class="fa fa-comments"></i>1,200</li>
+									</ul>
+								</div>
+							</div>
+							<div class="post">
+								<a href="detail.html">
+									<img src="rsc/images/head/user.png" />
+								</a>
+								<div class="wrapper">
+									<a href="#"><h5>Curabitur tincidunt porta lorem.</h5></a>
+									<ul class="list-inline">
+										<li><i class="fa fa-calendar"></i>25/3/2015</li> 
+										<li><i class="fa fa-comments"></i>1,200</li>
+									</ul>
+								</div>
+							</div>
+							<div class="post">
+								<a href="detail.html">
+									<img src="rsc/images/head/user.png" />
+								</a>
+								<div class="wrapper">
+									<a href="#"><h5>Curabitur tincidunt porta lorem.</h5></a>
+									<ul class="list-inline">
+										<li><i class="fa fa-calendar"></i>25/3/2015</li> 
+										<li><i class="fa fa-comments"></i>1,200</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="line"></div>
+					</div>
+					<div class="widget wid-banner">
+						<img src="rsc/images/banner-2.jpg" />
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+	<footer>
+		<div class="top-footer">
+			<ul class="footer-social list-inline">
+				<li><a href="#"><i class="fa fa-twitter"></i> <span>Twitter</span></a></li>
+				<li><a href="#"><i class="fa fa-facebook"></i> <span>Facebook</span></a></li>
+				<li><a href="#"><i class="fa fa-google-plus"></i> <span>Google+</span></a></li>
+				<li><a href="#"><i class="fa fa-youtube"></i> <span>Video's Tag</span></a></li>
+				<li><a href="#"><i class="fa fa-vimeo-square"></i> <span>Vimeo</span></a></li>
+				<li><a href="#"><i class="fa fa-pinterest"></i> <span>Pinterest</span></a></li>
+				<li><a href="#"><i class="fa fa-rss"></i> <span>Rss</span></a></li>
+			</ul>  
+		</div>
+		<div class="wrap-footer">
+			<div class="container">
+				<div class="row"> 
+					<aside class="col-footer col-md-3">
+						<h2 class="footer-title">About Us</h2>
+						<div class="textwidget">Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non. Pellentesque rutrum fringilla elementum. Curabitur tincidunt porta lorem vitae accumsan. <br> <br> 
+						Aenean feugiat in ante et blandit. Vestibulum posuere molestie risus, ac interdum magna porta non. Pellentesque rutrum fringilla elementum. Curabitur tincidunt porta lorem vitae accumsan.</div>
+					</aside> 
+					<aside class="col-footer col-md-3 widget_recent_entries">
+						<h2 class="footer-title">Recent Posts</h2>
+						<ul>
+							<li><a href="#">MOST VISITED COUNTRIES</a></li>
+							<li><a href="#">5 PLACES THAT MAKE A GREAT HOLIDAY</a></li>
+							<li><a href="#">PEBBLE TIME STEEL IS ON TRACK TO SHIP IN JULY</a></li>
+							<li><a href="#">STARTUP COMPANY&#8217;S CO-FOUNDER TALKS ON HIS NEW PRODUCT</a></li>
+						</ul>
+					</aside>
+					<aside class="col-footer col-md-3">
+						<h2 class="footer-title">NEWS LETTER</h2>
+						If you want to receive our latest news send directly to your email, please leave your email address bellow. Subscription is free and you can cancel anytime.
+						<form action="#" method="post">
+							<input type="text" name="your-name" value="" size="40" placeholder="Your Email" />
+							<input type="submit" value="SUBSCRIBE" class="btn btn-3" />
+						</form>
+					</aside>
+					<aside class="col-footer col-md-3 wptt_TwitterTweets">
+						<h2 class="footer-title">Twitter</h2>
+						<ul class="fetched_tweets light">
+							<li class="tweets_avatar">
+								<div class="tweet_wrap">
+									<div class="wdtf-user-card ltr">
+										<div class="clear"></div>
+									</div>
+									<div class="tweet_data"> Check out 'NewsTube - Magazine Blog &amp; Video' on <a href="#" target="_blank" rel="nofollow">#EnvatoMarket</a> <a href="#" target="_blank" rel="nofollow">#themeforest</a></div> <br/>
+									<div class="clear"></div>
+									<div class="times"> <em> <a href="#" target="_blank" title="Follow cactusthemes on Twitter [Opens new window]"> 2 months ago </a> </em></div>
+									<div class="clear"></div>
+								</div>
+								<div class="clear"></div>
+							</li>
+							<li class="tweets_avatar">
+								<div class="tweet_wrap">
+									<div class="wdtf-user-card ltr"><div class="clear"></div></div>
+									<div class="tweet_data"> Our latest theme 'Nano - Simple Magazine WordPress Theme' on <a href="#" target="_blank" rel="nofollow">#EnvatoMarket</a></div> <br/>
+									<div class="clear"></div>
+									<div class="times"> <em> <a href="#" target="_blank" title="Follow cactusthemes on Twitter [Opens new window]"> 5 months ago </a> </em></div>
+									<div class="clear"></div>
+								</div>
+								<div class="clear"></div>
+							</li>
+						</ul>
+					</aside>
+				</div>
+			</div>
+		</div>
+		<div class="bottom-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-6 copyright">
+						<span>Copyright &copy; 2015.Company name All rights reserved.<a target="_blank" href="http://www.cssmoban.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></span>
+					</div>
+					<div class="col-md-6 col-sm-6 link">
+						<div class="menu-footer-menu-container">
+							<ul id="menu-footer-menu" class="menu list-inline">
+								<li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+								<li><a href="#"><i class="fa fa-comments"></i> Contact</a></li>
+								<li><a href="#"><i class="fa fa-question-circle"></i> FAQ</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> 
+	</footer>
+	<!-- Footer -->
+	
+	<!-- JS -->
+	<script src="rsc/owl-carousel/owl.carousel.js"></script>
+    <script>
+    $(document).ready(function() {
+      $("#owl-demo").owlCarousel({
+        autoPlay: 3000,
+        items : 5,
+        itemsDesktop : [1199,4],
+        itemsDesktopSmall : [979,4]
+      });
+
+    });
+    </script>
+	
+<style>
+.copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+</style>
+<div class="copyrights" id="links20210126">
+	Collect from <a href="http://www.cssmoban.com/"  title="网站模板">模板之家</a>
+	<a href="https://www.chazidian.com/"  title="查字典">查字典</a>
+</div>
+</body>
+</html>
