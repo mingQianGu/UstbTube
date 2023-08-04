@@ -17,7 +17,7 @@ public class PhoneCodeTest {
 
         String code = CheckCodeUtil.getCode(6);
         // 接收短信的手机号
-        String phone = "18256555071";
+        String phone = "";
         // 调用发短信的方法
         String result =  logService.sendSms(phone, code);
 

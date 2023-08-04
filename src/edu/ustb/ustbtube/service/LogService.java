@@ -67,7 +67,9 @@ public class LogService {
     public String sendSms(String phone, String code){
         String result = null;
 
-        DefaultProfile profile = DefaultProfile.getProfile("cn-hangzhou", "LTAI5tJasEoa5Js19fE52orK", "lqxzFJ944f3PFl0N1fSkS6DY4cboaP");
+
+        // AccessKey ID 和 AccessKey Secret
+        DefaultProfile profile = DefaultProfile.getProfile("cn-hangzhou", "", "");
         IAcsClient client = new DefaultAcsClient(profile);
 
         CommonRequest request = new CommonRequest();
@@ -77,8 +79,8 @@ public class LogService {
         request.setAction("SendSms");
         request.putQueryParameter("RegionId", "cn-hangzhou");
         request.putQueryParameter("PhoneNumbers", phone);
-        request.putQueryParameter("SignName", "yaolegou验证码");
-        request.putQueryParameter("TemplateCode", "SMS_461820241");
+        request.putQueryParameter("SignName", "");//签名名称
+        request.putQueryParameter("TemplateCode", ""); //模版CODE
         request.putQueryParameter("TemplateParam", "{\"code\":\"" + code + "\"}");
         try {
             CommonResponse response = client.getCommonResponse(request);
